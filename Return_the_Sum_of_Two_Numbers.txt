@@ -1,0 +1,9 @@
+int addition(int a, int b) {
+	return (a + b);
+}
+####################################
+int addition(int a, int b) {
+	int c;
+  c = a + b;
+  return c;
+}

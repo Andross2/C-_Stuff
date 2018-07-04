@@ -1,0 +1,14 @@
+std::string isEvenOrOdd(int num) {
+	return (num % 2 == 0) ? "even" : "odd";
+}
+#################################################
+std::string isEvenOrOdd(int num) {
+	if (num % 0) {
+    return "even";
+  }
+  
+  else {
+    return "odd";
+  }
+}
+// my solution

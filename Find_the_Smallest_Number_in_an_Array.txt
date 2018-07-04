@@ -1,0 +1,23 @@
+int findSmallestNum(int arr[], int length) {
+	return *std::min_element(arr, arr-length);
+}
+############################################
+int findSmallestNum(int arr[], int length) {
+	auto temp = arr[0];
+  
+  for(auto i = 0; i < length; i++)
+  {
+    if(arr[i] <= temp)
+      temp = arr[i];
+  }
+  
+  return temp;
+}
+##################################
+int findSmallestNum(int arr[], int length) {
+	int min = INT_MAX;
+  for (size_t i = 0; i < length; i++) {
+		if (arr[i] < min) min = arr[i];
+  }
+  return min;
+}

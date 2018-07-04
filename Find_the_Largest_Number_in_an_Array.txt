@@ -1,0 +1,25 @@
+int findLargestNum(int arr[], int length) {
+	return *std::max_element(arr, arr+length);
+}
+#######################################################
+int findLargestNum(int arr[], int length) {
+	int max = arr[0];
+  for (int i = 1; i < length; i++)
+  {
+    if (arr[i] > max)
+    {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+#######################################################
+int findLargestNum(int arr[], int length) {
+	int max = INT_MIN;
+  for(size_t idx = 0; idx < length; idx++) {
+    if(arr[idx] > max) {
+      max = arr[idx];
+    }
+  }
+  return max;
+}

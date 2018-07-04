@@ -1,0 +1,15 @@
+std::string reverse(std::string str) {
+	while ( !(str.empty()) )
+  {
+    std::cout << str.back();
+    str.pop_back();
+  }
+}
+##########################################
+std::string reverse(std::string str) {
+	std::string r;
+  for (auto i = str.rbegin(); i != str.rend(); i++) {
+    r.push_back(*i);
+  }
+  return r;
+}
